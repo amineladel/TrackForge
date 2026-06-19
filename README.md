@@ -37,17 +37,6 @@ Puis ouvre `http://localhost:8000`.
 └── .nojekyll
 ```
 
-## Deploiement GitHub Pages
-
-Une fois le projet pousse sur GitHub, active GitHub Pages depuis les parametres du depot :
-
-1. Va dans `Settings` > `Pages`.
-2. Choisis `Deploy from a branch`.
-3. Selectionne la branche `main` et le dossier `/root`.
-4. Enregistre.
-
-L'application sera ensuite accessible depuis l'URL GitHub Pages du depot.
-
 ## Notes
 
 - La dependance WaveSurfer.js est chargee depuis un CDN.
