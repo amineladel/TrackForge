@@ -985,6 +985,192 @@
     background: var(--border);
   }
 
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    header {
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 24px;
+    }
+
+    .privacy-badge {
+      flex-shrink: 0;
+    }
+
+    .wizard-container {
+      padding: 20px 24px 0;
+      overflow-x: auto;
+    }
+
+    .wizard-steps {
+      width: max-content;
+      min-width: 100%;
+    }
+
+    .main {
+      padding: 28px 24px 52px;
+    }
+
+    .cover-layout,
+    .preview-layout,
+    .export-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .export-layout > div:last-child {
+      max-width: 360px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 640px) {
+    header {
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    .logo {
+      align-items: flex-start;
+    }
+
+    .logo-text {
+      font-size: 20px;
+    }
+
+    .privacy-badge {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .wizard-container {
+      padding: 16px 16px 0;
+    }
+
+    .step-btn {
+      padding: 10px 14px;
+      font-size: 12px;
+    }
+
+    .main {
+      padding: 24px 16px 44px;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 14px;
+    }
+
+    .card-title {
+      align-items: flex-start;
+    }
+
+    .dropzone,
+    .cover-dropzone {
+      padding: 36px 20px;
+    }
+
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .progress-header,
+    .file-info,
+    .player-controls,
+    .step-nav {
+      align-items: stretch;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .file-info .btn,
+    .step-nav .btn,
+    .btn-lg {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .file-info .btn {
+      margin-left: 0 !important;
+    }
+
+    .volume-control {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .volume-control input[type="range"] {
+      width: 100%;
+    }
+
+    .cover-img-preview,
+    .cover-placeholder,
+    .spotify-cover,
+    .spotify-cover-placeholder {
+      width: min(100%, 240px);
+      height: auto;
+      aspect-ratio: 1;
+    }
+
+    .spotify-card {
+      padding: 18px;
+    }
+
+    .spotify-mobile-card {
+      gap: 10px;
+    }
+
+    .export-filename {
+      align-items: flex-start;
+      overflow-wrap: anywhere;
+    }
+
+    .modal {
+      width: calc(100vw - 32px);
+      padding: 20px;
+    }
+
+    .crop-area {
+      height: min(320px, 70vw);
+    }
+
+    #toast {
+      right: 16px;
+      bottom: 16px;
+      left: 16px;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .step-btn {
+      gap: 8px;
+      padding: 9px 12px;
+    }
+
+    .step-num {
+      width: 20px;
+      height: 20px;
+    }
+
+    .card {
+      padding: 16px;
+    }
+
+    .btn {
+      min-height: 42px;
+      white-space: normal;
+    }
+
+    .sp-mob-cover,
+    .sp-mob-cover-ph {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
   /* ===== FOOTER ===== */
   footer {
     position: relative;
